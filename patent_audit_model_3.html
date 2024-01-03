@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Risk Management</title>
+    <style>
+      body {
+        text-align: center;
+        background-color: #f0f0f0;
+        margin: auto;
+        padding: 0;
+        padding-bottom: 150px; /* Increase bottom padding to lift content above footer */
+      }
+      .top-bar {
+        background-color: #007bff; /* Blue background */
+        padding: 10px 0; /* Padding for top and bottom, removed left and right padding */
+        font-size: 30px; /* Bigger text size */
+        font-weight: bold; /* Bold text */
+        color: white; /* White text for better contrast */
+        text-align: center; /* Center text alignment */
+        width: 100%; /* Ensures the bar takes full width */
+        box-sizing: border-box; /* Ensures pad */
+      }
+      .bottom-bar {
+        background-color: #ddd;
+        padding: 10px; /* Slightly increased padding for better spacing */
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
+        font-size: 18px; /* Increased font size */
+        font-weight: bold; /* Make text bold */
+        color: #333; /* Optional: Adjust color for better visibility or style */
+      }
+      .content {
+        margin: 20px auto;
+        max-width: 1200px; /* Adjust this as needed */
+        padding-bottom: 20px; /* Space for navigation buttons */
+      }
+      .slide-container {
+        position: relative;
+        padding-bottom: 80px; /* Adjusted space for navigation buttons below the image */
+      }
+      .slide {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin-bottom: 5px; /* Space between image and navigation */
+      }
+      .navigation {
+        position: absolute;
+        width: 100%;
+        bottom: 0; /* Position at the bottom of the slide-container */
+        display: flex;
+        justify-content: center; /* Center the buttons */
+        padding: 10px 0; /* Padding for navigation area */
+      }
+      .nav-button {
+        padding: 10px 20px;
+        text-decoration: none;
+        color: #fff;
+        background-color: #555;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        margin: 0 10px; /* Space between buttons */
+      }
+      .nav-button:hover {
+        background-color: #333;
+      }
+      .nav-button.prev:before {
+        content: "<< "; /* Unicode arrow */
+      }
+      .nav-button.next:after {
+        content: " >>"; /* Unicode arrow */
+      }
+      .logo {
+        height: 40px;
+        vertical-align: middle;
+        margin-right: 15px;
+      }
+      .header-container {
+        display: flex;
+        justify-content: space-between; /* Keeps items on the sides */
+        align-items: center;
+        background-color: #007bff;
+        padding: 10px 20px;
+      }
+      .header-title {
+        margin: 0 auto; /* Auto margins center the title */
+        font-size: 30px;
+        font-weight: bold;
+        color: white;
+      }
+      .header-nav {
+        /* Aligns the navigation tab to the right */
+        margin-left: left; /* Pushes the nav to the right */
+      }
+      .header-nav a {
+        padding: 10px 15px;
+        text-decoration: none;
+        color: white;
+        background-color: #0056b3;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+      }
+      .header-nav a:hover {
+        background-color: #003d7a;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header-container">
+      <div style="width: 10px"></div>
+      <!-- Placeholder for alignment -->
+      <div class="header-title">Risk Assessment</div>
+      <div class="header-nav">
+        <!-- Link back to the main page -->
+        <a href="patent_audit_model_1.html">Back to Main Page</a>
+      </div>
+    </div>
+    <div class="content">
+      <div class="slide-container">
+        <img src="Risk Management 3.jpg" alt="Slide 3" class="slide" />
+
+        <div class="navigation">
+          <a href="patent_audit_model_2.html" class="nav-button prev">Prev</a>
+          <a href="patent_audit_model_4.html" class="nav-button next">Next</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="bottom-bar">
+      <img src="logo.png" alt="Logo" class="logo" />Patent Audit Navigator
+    </div>
+  </body>
+</html>
